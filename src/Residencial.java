@@ -14,6 +14,18 @@ public class Residencial extends Imovel {
     }
 
     public double calculaImposto() {
-        TODO: implement!
+        if(super.getAreaConstruida() <= 200) {
+            return 0.0;
+        }else if(super,getAreaConstruida() > 200) {
+            if(super.getAreaTerreno() > 500) {
+                return 100 * super.getValorReferencia();
+            }
+            return (super.getAreaConstruida() - 200) * super.getValorReferencia();
+        }
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "Imposto: "+this.calculaImposto();
     }
 }
