@@ -13,5 +13,7 @@ public class Residencial extends Imovel {
         this.areaTerreno = at;
     }
 
-    
+    public double calculaImposto() {
+        TODO: implement!
+    }
 }
