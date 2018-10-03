@@ -37,6 +37,11 @@ public abstract class Imovel {
 
     @Override
     public String toString() {
-        return "";
+        String s =
+        "\nProprietário: "+this.proprietario+
+        "\nArea Construida: "+this.areaConstruida+
+        "\nLocalização: (lat) "+this.geoloc.getLatitude()+
+        " (lon) "+this.geoloc.getLongitude();
+        return s;
     }
 }
