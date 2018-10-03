@@ -1,0 +1,16 @@
+Questao 2: Responda suscintamente:
+
+a) Neste diagrama pode ser observado polimorfismo?
+    Sim. No metodo add() da classe CadastroImoveis pois como parametro pode receber qualquer tipo de imovel.
+
+b) Neste diagrama pode ser observado sobrecarga?
+    Sim. No metodo listar() da classe CadastroImoveis pois existe outro metodo com o mesmo nome, mas com parametros.
+
+c) Neste diagrama pode ser observado sobrescrita?
+    Sim. No metodo calculaImposto das classes Residencial e Comercial e nos metodos toString das mesmas classes.
+
+d) Qual a implicacao da classe Imovel ser abstract?
+    Ela nao pode ser instanciada.
+
+e) Qual a implicacao do metodo calculaImposto ser abstract?
+    Forca a implementacao do metodo abstract nas classes filhas ou forca a definicao das classes filhas como abstract tambem.
