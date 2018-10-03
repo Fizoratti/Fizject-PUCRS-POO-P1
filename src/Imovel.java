@@ -32,6 +32,9 @@ public abstract class Imovel {
         this.valorReferencia = vr;
     }
 
+    //Abstract Method
+    public abstract double calculaImposto();
+
     @Override
     public String toString() {
         return "";
