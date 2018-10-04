@@ -14,14 +14,14 @@ public class Residencial extends Imovel {
     }
 
     public double calculaImposto() {
-        double valor;
+        double valor = 0.0;
         if(super.getAreaConstruida() <= 200) {
             valor = 0.0;
         }
         if(super.getAreaConstruida() > 200) {
             valor = (super.getAreaConstruida() - 200) * super.getValorReferencia();
         }
-        if(getAreaTerreno() > 500) {
+        if(this.getAreaTerreno() > 500) {
             valor += 100 * super.getValorReferencia();
         }
         return valor;
