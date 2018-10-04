@@ -1,19 +1,19 @@
 import java.util.*;
 
-public class CadastroImoveis<T> {
-    private List<Imovel> lista;
+public class CadastroImoveis<Imovel> {
+    private ArrayList<Imovel> lista;
 
     public CadastroImoveis() {
-        lista = new ArrayList<T>();
+        lista = new ArrayList<>();
     }
 
     public String listar() {
         Imovel imovel;
         String listagem;
-        Collections.sort(lista);
-        for(int i = 0; i < lista.get.size(); i++) {
+        //Collections.sort(lista);
+        for(int i = 0; i < lista.size(); i++) {
             imovel = (Imovel) lista.get(i);
-            listagem += "(" + i + ") " + imovel.toString() + getTipoImovel() + "\n";
+            listagem += "(" + i + ") " + imovel.toString() + getTipoImovel(imovel) + "\n";
         }
         return listagem;
     }
@@ -21,7 +21,7 @@ public class CadastroImoveis<T> {
     public String listar(String p) {
         Imovel imovel;
         String listagem;
-        for(int i = 0; i < lista.get.size(); i++) {
+        for(int i = 0; i < lista.size(); i++) {
             imovel = (Imovel) lista.get(i);
             if(imovel.getProprietario == p) {
                 listagem += "(" + i + ") " + imovel.toString() + "\n";

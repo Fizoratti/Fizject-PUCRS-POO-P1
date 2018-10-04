@@ -1,6 +1,6 @@
 all:
-	javac App.java
-	java App
+	javac Main.java
+	java Main
 
 	#
 	# MANUAL
