@@ -16,7 +16,7 @@ public class Geo {
     public double getLongitude() {
         return this.longitude;
     }
-    public void setLatitude(double lon) {
+    public void setLongitude(double lon) {
         this.longitude = lon;
     }
 
