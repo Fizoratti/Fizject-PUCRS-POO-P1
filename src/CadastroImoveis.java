@@ -10,12 +10,14 @@ public class CadastroImoveis {
     public String listar() {
         Imovel imovel;
         String listagem;
+        Collections.sort(lista);
         for(int i = 0; i < lista.get.size(); i++) {
             imovel = (Imovel) lista.get(i);
-            listagem += "(" + i + ") " + imovel.toString() + "\n";
+            listagem += "(" + i + ") " + imovel.toString() + getTipoImovel() + "\n";
         }
         return listagem;
     }
+
     public String listar(String p) {
         Imovel imovel;
         String listagem;
@@ -26,6 +28,16 @@ public class CadastroImoveis {
             }
         }
         return listagem;
+    }
+
+    public String getTipoImovel(Imovel imovel) {
+        String tipo;
+        if(imovel instanceOf Residencial) {
+            tipo = "Residencial";
+        }else if(imovel instanceOf Comercial){
+            tipo = "Comercial";
+        }
+        return tipo;
     }
 
     public String claculaImpostoTotal() {
