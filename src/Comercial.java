@@ -4,15 +4,12 @@ public class Comercial extends Imovel {
     }
 
     public double calculaImposto() {
-        double valor;
+        double valor = 0.0;
         if(super.getAreaConstruida() <= 100) {
             valor = 100.0;
         }
         if(super.getAreaConstruida() > 100) {
             valor = (super.getAreaConstruida() - 100) * super.getValorReferencia();
-        }
-        if(super.getAreaTerreno() > 150) {
-            valor += 100 * super.getValorReferencia();
         }
         return valor;
     }
