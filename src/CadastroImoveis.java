@@ -7,6 +7,27 @@ public class CadastroImoveis {
         lista = new ArrayList<>();
     }
 
+    public String listar() {
+        Imovel imovel;
+        String listagem;
+        for(int i = 0; i < lista.get.size(); i++) {
+            imovel = (Imovel) lista.get(i);
+            listagem += "(" + i + ") " + imovel.toString() + "\n";
+        }
+        return listagem;
+    }
+    public String listar(String p) {
+        Imovel imovel;
+        String listagem;
+        for(int i = 0; i < lista.get.size(); i++) {
+            imovel = (Imovel) lista.get(i);
+            if(imovel.getProprietario == p) {
+                listagem += "(" + i + ") " + imovel.toString() + "\n";
+            }
+        }
+        return listagem;
+    }
+
     public String claculaImpostoTotal() {
         double total;
         Imovel imovel;
