@@ -32,9 +32,9 @@ public class CadastroImoveis<T> {
 
     public String getTipoImovel(Imovel imovel) {
         String tipo;
-        if(imovel instanceOf Residencial) {
+        if(imovel instanceof Residencial) {
             tipo = "Residencial";
-        }else if(imovel instanceOf Comercial){
+        }else if(imovel instanceof Comercial){
             tipo = "Comercial";
         }
         return tipo;
