@@ -23,7 +23,7 @@ public class CadastroImoveis<Imovel> {
         String listagem;
         for(int i = 0; i < lista.size(); i++) {
             imovel = (Imovel) lista.get(i);
-            if(imovel.getProprietario == p) {
+            if(imovel.getProprietario() == p) {
                 listagem += "(" + i + ") " + imovel.toString() + "\n";
             }
         }
