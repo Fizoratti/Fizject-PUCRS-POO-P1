@@ -29,6 +29,6 @@ public class Residencial extends Imovel {
 
     @Override
     public String toString() {
-        return super.toString() + "Imposto: "+this.calculaImposto();
+        return super.toString() + "\nImposto: "+this.calculaImposto();
     }
 }

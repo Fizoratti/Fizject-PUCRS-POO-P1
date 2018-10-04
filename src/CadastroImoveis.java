@@ -1,10 +1,10 @@
-import java.util.List;
+import java.util.*;
 
 public class CadastroImoveis<T> {
     private List<Imovel> lista;
 
     public CadastroImoveis() {
-        lista = new ArrayList<>();
+        lista = new ArrayList<T>();
     }
 
     public String listar() {
