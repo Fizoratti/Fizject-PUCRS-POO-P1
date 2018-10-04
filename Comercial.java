@@ -1,3 +1,4 @@
+
 public class Comercial extends Imovel {
     public Comercial(String p, int a, double lat, double lon) {
         super(p,a,lat,lon);

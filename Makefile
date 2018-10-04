@@ -1,6 +1,12 @@
 all:
 	clear
-	javac Main.java
+
+	# javac App.java 
+	# jar -cvf App *.class
+	# java App
+
+	javac Main.java 
+	jar -cvf Main *.class
 	java Main
 
 	#

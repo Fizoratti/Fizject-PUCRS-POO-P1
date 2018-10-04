@@ -1,4 +1,5 @@
-public abstract class Imovel implements Comparable<Imovel>{
+
+public abstract class Imovel {
     //Atributos
     private String proprietario;
     private int areaConstruida;

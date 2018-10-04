@@ -1,3 +1,4 @@
+
 import java.util.*;
 
 public class CadastroImoveis<Imovel> {
@@ -9,7 +10,7 @@ public class CadastroImoveis<Imovel> {
 
     public String listar() {
         Imovel imovel;
-        String listagem;
+        String listagem = "";
         //Collections.sort(lista);
         for(int i = 0; i < lista.size(); i++) {
             imovel = (Imovel) lista.get(i);
@@ -20,10 +21,10 @@ public class CadastroImoveis<Imovel> {
 
     public String listar(String p) {
         Imovel imovel;
-        String listagem;
+        String listagem = "";
         for(int i = 0; i < lista.size(); i++) {
             imovel = (Imovel) lista.get(i);
-            if(imovel.getProprietario() == p) {
+            if(true /*imovel.getProprietario() == p*/) {
                 listagem += "(" + i + ") " + imovel.toString() + "\n";
             }
         }
@@ -31,7 +32,7 @@ public class CadastroImoveis<Imovel> {
     }
 
     public String getTipoImovel(Imovel imovel) {
-        String tipo;
+        String tipo = "";
         if(imovel instanceof Residencial) {
             tipo = "Residencial";
         }else if(imovel instanceof Comercial){
@@ -45,11 +46,12 @@ public class CadastroImoveis<Imovel> {
     }
 
     public String calculaImpostoTotal() {
-        double total;
+        double total = 0.0;
         Imovel imovel;
         for(int i = 0; i < lista.size(); i++) {
             imovel = (Imovel) lista.get(i);
-            total = total + imovel.calculaImposto();
+            //total += imovel.calculaImposto();
+            return imovel.toString();
         }
         return "Valor total de imposto: "+total;
     }

@@ -1,3 +1,4 @@
+
 public class Residencial extends Imovel {
     private int areaTerreno;
 
