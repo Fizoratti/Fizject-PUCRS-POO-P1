@@ -44,7 +44,7 @@ public class CadastroImoveis<T> {
         lista.add(i);
     }
 
-    public String claculaImpostoTotal() {
+    public String calculaImpostoTotal() {
         double total;
         Imovel imovel;
         for(int i = 0; i < lista.size(); i++) {
