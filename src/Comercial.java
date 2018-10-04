@@ -16,4 +16,9 @@ public class Comercial extends Imovel {
         }
         return valor;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "Imposto: "+this.calculaImposto();
+    }
 }
