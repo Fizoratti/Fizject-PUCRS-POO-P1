@@ -5,9 +5,9 @@ public class Main {
         CadastroImoveis<Imovel> ci = new CadastroImoveis<>();
 
         //B)
-        ci.add(new Residencial("Robson", 70, 12.456, 54.321));
-        ci.add(new Residencial("Jose", 120, 13.456, 11.721));
-        ci.add(new Residencial("Bianca", 400, 12.878, 54.321));
+        ci.add(new Residencial("Robson", 70, 12.456, 54.321, 89));
+        ci.add(new Residencial("Jose", 120, 13.456, 11.721, 155));
+        ci.add(new Residencial("Bianca", 400, 12.878, 54.321, 666));
         
         //C)
         System.out.println(ci.listar());
