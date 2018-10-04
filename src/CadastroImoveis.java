@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class CadastroImoveis {
+public class CadastroImoveis<T> {
     private List<Imovel> lista;
 
     public CadastroImoveis() {
@@ -38,6 +38,10 @@ public class CadastroImoveis {
             tipo = "Comercial";
         }
         return tipo;
+    }
+
+    public void addImovel(Imovel i){
+        lista.add(i);
     }
 
     public String claculaImpostoTotal() {
