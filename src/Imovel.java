@@ -1,4 +1,4 @@
-public abstract class Imovel {
+public abstract class Imovel implements Comparable<Imovel>{
     //Atributos
     private String proprietario;
     private int areaConstruida;
@@ -34,6 +34,17 @@ public abstract class Imovel {
 
     //Abstract Method
     public abstract double calculaImposto();
+
+    //Function Interface Method
+    public int compareTo(Imovel i) {
+        if( this.getAreaConstruida() < i.getAreaConstruida() ) {
+            return -1;
+        }
+        if( this.getAreaConstruida() > i.getAreaConstruida() ) {
+            return 1;
+        }
+        return 0;
+    }
 
     @Override
     public String toString() {
