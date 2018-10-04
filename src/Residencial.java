@@ -21,7 +21,7 @@ public class Residencial extends Imovel {
         if(super.getAreaConstruida() > 200) {
             valor = (super.getAreaConstruida() - 200) * super.getValorReferencia();
         }
-        if(super.getAreaTerreno() > 500) {
+        if(getAreaTerreno() > 500) {
             valor += 100 * super.getValorReferencia();
         }
         return valor;
